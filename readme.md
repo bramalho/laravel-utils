@@ -6,6 +6,7 @@
 
 Laravel Utils is a package that provide several base classes for your project:
 * Repository
+* Basic Enum
 
 ## Installation
 Install the package
@@ -43,6 +44,27 @@ class UserRepository extends Repository
         parent::__construct($model);
     }
 }
+```
+
+### Basic Enum
+```php
+<?php
+
+namespace App;
+
+use BRamalho\LaravelUtils\BasicEnum;
+
+abstract class StatusEnum extends BasicEnum
+{
+    const ACTIVE = 1;
+    const INACTIVE = 0;
+}
+
+StatusEnum::getConstants(); //["ACTIVE" => 1, "INACTIVE" => 0]
+StatusEnum::isValidName('ACTIVE'); //true
+StatusEnum::isValidName('WAITING'); //false
+StatusEnum::isValidValue(1); //true
+StatusEnum::isValidValue(2); //false
 ```
 
 ## License
