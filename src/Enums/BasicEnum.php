@@ -1,6 +1,6 @@
 <?php
 
-namespace BRamalho\LaravelUtils;
+namespace BRamalho\LaravelUtils\Enums;
 
 abstract class BasicEnum
 {

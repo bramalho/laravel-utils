@@ -1,6 +1,6 @@
 <?php
 
-namespace BRamalho\LaravelUtils;
+namespace BRamalho\LaravelUtils\Repositories;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Collection;

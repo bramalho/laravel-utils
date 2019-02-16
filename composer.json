@@ -1,7 +1,7 @@
 {
     "name": "bramalho/laravel-utils",
     "description": "Laravel Utils Package",
-    "keywords": ["laravel", "utils"],
+    "keywords": ["laravel", "utils", "enum", "repository"],
     "license": "MIT",
     "authors": [
         {
